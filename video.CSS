@@ -1,0 +1,180 @@
+
+.thumbnail{
+width:100%;
+border-radius:6px;
+transition: border-raduis 0.15;
+
+}
+
+
+.thumbnail:hover{
+  border-radius: 0%;
+
+}
+
+
+.video-info{
+
+}
+
+
+.video-link{
+  position:relative;
+}
+
+
+
+.video-title{
+margin-top: 0px;
+font-size:14px;
+font-weight:500;
+line-height:20px;
+margin-bottom:10px;
+margin-top:5px;
+
+}
+
+@media (min-width:1000px)
+{ .video-title{
+  font-size:16px;
+  line-height:24px;
+}
+}
+
+
+
+.video-link{
+  text-decoration:none;
+  color:black;
+}
+
+
+.video-author-div{
+position: relative;
+}
+
+.video-author-div .tooltip{
+  position:absolute;
+  font-family:Roboto;
+  background-color:grey;
+    color:white;
+    padding:10px 4px 10px 4px;
+    border-radius:5px;
+    font-size:12px;
+    top:-40px;
+    opacity:0;
+    transition:opacity 0.15;
+    pointer-events:none;
+    white-space:nowrap;
+    font-family:Roboto, Arial;
+    pointer-events:none;
+    cursor:pointer;
+}
+
+
+.video-author-div:hover .tooltip{
+  opacity:1;
+}
+
+
+
+
+
+
+.video-author,
+.video-stats{
+font-size:12px;
+color: rgb(95, 95, 95);
+margin-top:0px;
+}
+
+@media(min-width:1000px)
+{.video-author{
+  font-size:14px;
+}
+
+}
+
+@media (min-width:1000px)
+{ .video-stats{
+  font-size:14px;
+}
+}
+
+
+.video-author{
+margin-bottom: 4px;
+}
+
+
+
+.video-info-grid{
+display: grid;
+grid-template-columns:50px 1fr;
+}
+
+
+
+.profile-pic{
+width:36px;
+border-radius:50px;
+}
+
+.thumbnail-row{
+margin-bottom:8px;
+position:relative;
+}
+
+.video-time{
+  position:absolute;
+  right:5px;
+  bottom:8px;
+  background-color:black;
+  color:white;
+  font-size:12px;
+  font-weight:500;
+  padding: 4px;
+  border-radius:2px;
+}
+
+@media(min-width:1000px){
+  .video-time{
+    font-size:14px;
+  }
+}
+
+
+
+.video-grid{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 16px;
+row-gap:40px;
+
+
+}
+
+@media (max-width:750px) {
+
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+}
+
+
+@media (min-width: 751px ) and (max-width:999px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  
+}
+
+
+@media (min-width:1000px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+}
